@@ -1,0 +1,104 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.form {
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form label,
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #2e2f42;
+}
+
+input[type='number'] {
+  padding: 10px 12px;
+  border: 1px solid #808080;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+input[type='number']:hover {
+  border-color: #000000;
+}
+
+input[type='number']:focus {
+  outline: none;
+  border-color: #3f51b5;
+  box-shadow: 0 0 4px rgba(63, 81, 181, 0.3);
+}
+
+fieldset {
+  border: 1px solid #808080;
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+fieldset:hover {
+  border-color: #000000;
+}
+
+fieldset:has(:focus-within) {
+  border-color: #000;
+}
+
+fieldset legend {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2e2f42;
+  text-align: left;
+  padding: 0 4px;
+  margin-left: 0;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+
+.radio-group label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #2e2f42;
+}
+
+input[type='radio'] {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button[type='submit'] {
+  padding: 12px;
+  background-color: #3f65f7;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+button[type='submit']:hover {
+  background-color: #6c8cff;
+}

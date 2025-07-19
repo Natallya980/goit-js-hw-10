@@ -1,0 +1,73 @@
+.timer {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #666;
+}
+
+input {
+  margin-right: 8px;
+  width: 272px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px 8px;
+}
+
+input:hover {
+  border-color: #000000;
+}
+
+input:disabled {
+  border-color: #808080;
+}
+
+input:disabled > div {
+  color: #808080;
+}
+
+#datetime-picker:focus {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+
+#datetime-picker.is-active {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+
+button {
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  border-color: #4e75ff;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #6c8cff;
+  border-color: #6c8cff;
+}
+
+button:disabled {
+  background-color: #cfcfcf;
+  border-color: #cfcfcf;
+}
